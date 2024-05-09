@@ -7,7 +7,7 @@ jobs:
   fetch_data:
     runs-on: ubuntu-latest
     steps:
-	  - name: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v2
       - name: Fetch data from S3
         run: |
