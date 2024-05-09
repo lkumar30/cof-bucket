@@ -7,6 +7,8 @@ jobs:
   fetch_data:
     runs-on: ubuntu-latest
     steps:
+	  - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Fetch data from S3
         run: |
           aws s3 sync s3://cof-bucket/ .
@@ -14,6 +16,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: 'us-east-2'  
+		  
       - name: Configure Git
         run: |
           git config --global user.email "logeshkumar7082@gmail.com"
@@ -22,6 +25,7 @@ jobs:
         run: |
           git add .
           git commit -m "Fetch data from S3"
+		  
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
