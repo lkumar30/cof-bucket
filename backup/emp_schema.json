@@ -1,0 +1,21 @@
+{
+  "table_structures": [
+    {
+      "table_name": "employee_table",
+      "table_columns": [
+        {
+          "column_name": "id",
+          "column_type": "VARCHAR"
+        },
+        {
+          "column_name": "name",
+          "column_type": "VARCHAR"
+        },
+        {
+          "column_name": "address",
+          "column_type": "VARCHAR"
+        }
+      ]
+    }
+  ]
+}
