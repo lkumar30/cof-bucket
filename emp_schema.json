@@ -30,6 +30,14 @@
                 {
                     "column_name": "cn22",
                     "column_type": "VARCHAR"
+                },
+                {
+                    "column_name": "cn1",
+                    "column_type": "VARCHAR"
+                },
+                {
+                    "column_name": "cn22",
+                    "column_type": "VARCHAR"
                 }
             ]
         }
