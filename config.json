@@ -1,0 +1,40 @@
+{
+  "source": "CC",
+  "email_notification_recipient": [
+    "mourya.s@contracted.pmi.com"
+  ],
+  "bucket_name": "dev-matillion-data",
+  "s3_root_folder": "FEA/staged_data/CC",
+  "unpack_zip_file": "No",
+  "folder_file_name": "{zipname}",
+  "if_incremental": "No",
+  "last_modified_check": "",
+  "zip_file_name": ".*",
+  "tables": [
+    {
+      "table_name": "EMPLOYEE",
+      "file_pattern": "employee",
+      "table_file_name": "employee",
+      "max_scan_files": 1,
+      "file_type": "csv",
+      "field_delimeter": ",",
+      "has_header": "Y", 
+      "extraction_configuration": {
+        "extract_type": "full"
+      }
+    },
+    {
+      "table_name": "DEPARTMENT",
+      "file_pattern": "dept",
+      "table_file_name": "dept",
+      "max_scan_files": 1,
+      "file_type": "csv",
+      "field_delimeter": ",",
+      "has_header": "Y",
+      "extraction_configuration": {
+        "extract_type": "full"
+      }
+    }
+  ]
+}
+

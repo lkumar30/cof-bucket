@@ -1,0 +1,31 @@
+---
+source_name: SHOPPERTRAK
+source_type: excel
+source_code: SHOPPERTRAK
+data_type: STRUCTURED
+table:
+  - table_name: SHOPPERTRAKDAILYFOOTFALL
+    data_items: "*"
+    load_type: DELTA 
+    track_change: TRUE
+    load_frequency: DAILY
+    primary_keys:
+      - DATE
+      - TIME
+      - CUSTOMER_ID
+    business_keys:
+      - DATE
+      - TIME
+      - CUSTOMER_ID
+    compare_columns:
+    effective_data-item: ""
+    hwm_data_item: ""
+    category: ""
+    run_group: ""
+
+
+
+
+
+
+
